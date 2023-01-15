@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-
+import { Link } from "react-router-dom";
 
 class Navbar extends React.Component{
 
@@ -14,28 +14,28 @@ class Navbar extends React.Component{
               <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li className="nav-item mt-2">
-                        <a className="nav-link" href="/Technology"><button type="button" className="btn btn-primary mr-2 ml-2">Technology</button></a>
+                    <Link to="/Technology"><button type="button" className="btn btn-primary mr-2 ml-2">Technology</button></Link>
                     </li>
                     <li className="nav-item mt-2">
-                        <a className="nav-link" href="/Entertainment"><button type="button" className="btn btn-primary mr-2 ml-2">Entertainment</button></a>
+                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Entertainment</button></a>
                     </li>
                     <li className="nav-item mt-2">
-                        <a className="nav-link" href="/Sports"><button type="button" className="btn btn-primary mr-2 ml-2">Sports</button></a>
+                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Sports</button></a>
                     </li>
                     <li className="nav-item mt-2">
-                        <a className="nav-link" href="/Politics"><button type="button" className="btn btn-primary mr-2 ml-2">Politics</button></a>
+                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Politics</button></a>
                     </li>
                     <li className="nav-item mt-2">
-                        <a className="nav-link" href="/Travel"><button type="button" className="btn btn-primary mr-2 ml-2">Travel</button></a>
+                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Travel</button></a>
                     </li>
                     <li className="nav-item mt-2">
-                        <a className="nav-link" href="/Business"><button type="button" className="btn btn-primary mr-2 ml-2">Business</button></a>
+                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Business</button></a>
                     </li>  
                     <li className="nav-item mt-2">
-                        <a className="nav-link" href="/Food"><button type="button" className="btn btn-primary mr-2 ml-2">Food</button></a>
+                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Food</button></a>
                     </li>  
                     <li className="nav-item mt-2">
-                        <a className="nav-link" href="/Beauty"><button type="button" className="btn btn-primary mr-2 ml-2">Beauty</button></a>
+                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Beauty</button></a>
                     </li>  
                 </ul>
               </div>
