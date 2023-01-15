@@ -1,0 +1,80 @@
+.card{
+    margin-left:0;
+    margin-right:0;
+    padding:0;
+}
+.card{
+max-height:49vh;
+max-width:auto;
+min-height:45vmh;
+width:100%;
+height: auto;
+border-radius: 10px;
+/* border:1px solid black; */
+overflow: hidden;
+transition: transform .2s;
+/* opacity:1;
+ */
+} 
+
+.card:hover{
+transform: scale(1.01);
+cursor: pointer;
+/* filter:brightness(98%); */
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.card img{
+width:auto;
+max-height:33vh;
+min-height: 33vh;
+margin:0;
+padding-bottom: 0;
+/* border:2px solid purple; */
+}
+
+.card-body
+{   
+    margin:0;
+    /* padding-top: 1px;  */
+    width:100%;
+    /* border:2px solid brown;  */
+}
+
+
+.newsHeading{
+text-align:justify;
+/* text-decoration: underline; */
+color:black; 
+max-height:10vh;
+width:calc(100%);
+word-wrap: break-word;
+margin:0;
+font-size:1rem;
+
+/* margin-bottom: 1vh;  */
+}
+
+.card-title a{
+    color:black;
+    text-decoration: none;
+}
+
+
+.newsTime{
+   
+    font-size: .7em;
+    max-height:1vh;
+    font-weight: 300;
+    padding-left:80%;
+    width:100%;
+}
+
+@media screen and (max-width: 480px) {
+    .newsTime{
+        margin-top: 1vh;
+    }
+
+    .newsHeading{
+        text-align:start;
+    }
+  }
