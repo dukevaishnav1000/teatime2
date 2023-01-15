@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/teatime2/static/css/main.b7b1ad74.css",
-    "main.js": "/teatime2/static/js/main.4c162eda.js",
+    "main.js": "/teatime2/static/js/main.c2011d7f.js",
     "index.html": "/teatime2/index.html",
     "main.b7b1ad74.css.map": "/teatime2/static/css/main.b7b1ad74.css.map",
-    "main.4c162eda.js.map": "/teatime2/static/js/main.4c162eda.js.map"
+    "main.c2011d7f.js.map": "/teatime2/static/js/main.c2011d7f.js.map"
   },
   "entrypoints": [
     "static/css/main.b7b1ad74.css",
-    "static/js/main.4c162eda.js"
+    "static/js/main.c2011d7f.js"
   ]
 }
