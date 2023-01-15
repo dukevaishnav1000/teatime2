@@ -13,30 +13,30 @@ class Navbar extends React.Component{
               </button>
               <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li className="nav-item mt-2 mr-2 ml-2">
-                    <Link to="/Technology"><button type="button" className="btn btn-primary ">Technology</button></Link>
-                    </li>
-                    <li className="nav-item mt-2 mr-2 ml-2">
-                        <Link to="/Entertainment"><button type="button" className="btn btn-primary ">Entertainment</button></Link>
-                    </li>
-                    <li className="nav-item mt-2 mr-2 ml-2">
-                    <Link to="/Sports"><button type="button" className="btn btn-primary">Sports</button></Link>
+                <li className="nav-item mt-2">
+                        <a className="nav-link" href="https://dukevaishnav1000.github.io/teatime2/Technology"><button type="button" className="btn btn-primary mr-2 ml-2">Technology</button></a>
                     </li>
                     <li className="nav-item mt-2">
-                    <Link to="/Politics"><button type="button" className="btn btn-primary mr-2 ml-2">Politics</button></Link>
+                        <a className="nav-link" href="https://dukevaishnav1000.github.io/teatime2/Entertainment"><button type="button" className="btn btn-primary mr-2 ml-2">Entertainment</button></a>
                     </li>
                     <li className="nav-item mt-2">
-                    <Link to="/Travel"><button type="button" className="btn btn-primary mr-2 ml-2">Travel</button></Link>
+                        <a className="nav-link" href="https://dukevaishnav1000.github.io/teatime2/Sports"><button type="button" className="btn btn-primary mr-2 ml-2">Sports</button></a>
                     </li>
                     <li className="nav-item mt-2">
-                        <Link to="/Business"><button type="button" className="btn btn-primary mr-2 ml-2">Business</button></Link>
+                        <a className="nav-link" href="https://dukevaishnav1000.github.io/teatime2/Politics"><button type="button" className="btn btn-primary mr-2 ml-2">Politics</button></a>
+                    </li>
+                    <li className="nav-item mt-2">
+                        <a className="nav-link" href="https://dukevaishnav1000.github.io/teatime2/Travel"><button type="button" className="btn btn-primary mr-2 ml-2">Travel</button></a>
+                    </li>
+                    <li className="nav-item mt-2">
+                        <a className="nav-link" href="https://dukevaishnav1000.github.io/teatime2/Business"><button type="button" className="btn btn-primary mr-2 ml-2">Business</button></a>
                     </li>  
                     <li className="nav-item mt-2">
-                        <Link to="/Food"><button type="button" className="btn btn-primary mr-2 ml-2">Food</button></Link>
+                        <a className="nav-link" href="https://dukevaishnav1000.github.io/teatime2/Food"><button type="button" className="btn btn-primary mr-2 ml-2">Food</button></a>
                     </li>  
                     <li className="nav-item mt-2">
-                    <Link to="/Beauty"><button type="button" className="btn btn-primary mr-2 ml-2">Beauty</button></Link>
-                    </li>  
+                        <a className="nav-link" href="https://dukevaishnav1000.github.io/teatime2/Beauty"><button type="button" className="btn btn-primary mr-2 ml-2">Beauty</button></a>
+                    </li>      
                 </ul>
               </div>
             </div>
