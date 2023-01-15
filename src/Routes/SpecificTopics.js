@@ -99,9 +99,23 @@ class SpecificTopics extends React.Component{
     fetchHomeData(){
         //new data will be fetched if 
         console.log("fetchHomeData called");
-        console.log(window.location.pathname)
+        console.log(window.location.href)
         
-        switch (window.location.pathname) {
+        fetch(`https://api.allorigins.win/get?url=${encodeURIComponent("https://newsapi.org/v2/everything?q=technology&pageSize=40&apiKey=ca7e73b85d284f8094f30683304ad991")}`).then((res)=>{
+                        return res.json();             
+                       },rej=>{
+                           console.log("Error while feching: ",rej)
+                       }).then(data=>{
+                                news_articles.push(...JSON.parse(data.contents).articles);
+                                    console.log(news_articles);
+                                    
+                        }).then((data)=>{
+                         setTimeout(()=>{this.observer.observe(document.getElementsByClassName("endOfResults")[0]);
+                         this.makeCards.bind(this)();
+                        },2000);
+                        })         
+                    
+        switch (window.location.href) {
             case "/Entertainment":
                         //us,in,uk,cn,ru,jp,au
                         fetch(`https://api.allorigins.win/get?url=${encodeURIComponent("https://newsapi.org/v2/everything?q=entertainment&pageSize=40&apiKey=ca7e73b85d284f8094f30683304ad991")}`)
@@ -120,25 +134,10 @@ class SpecificTopics extends React.Component{
                         })
                                 
                     break;
-            case "/Technology":
                     
   
                         //us,in,uk,cn,ru,jp,au
-                        fetch(`https://api.allorigins.win/get?url=${encodeURIComponent("https://newsapi.org/v2/everything?q=technology&pageSize=40&apiKey=ca7e73b85d284f8094f30683304ad991")}`).then((res)=>{
-                        return res.json();             
-                       },rej=>{
-                           console.log("Error while feching: ",rej)
-                       }).then(data=>{
-                                news_articles.push(...JSON.parse(data.contents).articles);
-                                    console.log(news_articles);
-                                    
-                        }).then((data)=>{
-                         setTimeout(()=>{this.observer.observe(document.getElementsByClassName("endOfResults")[0]);
-                         this.makeCards.bind(this)();
-                        },2000);
-                        })
-                             
-                    break;
+                        
             case "/Sports":
                     
                        
