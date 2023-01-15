@@ -17,25 +17,25 @@ class Navbar extends React.Component{
                     <Link to="/Technology"><button type="button" className="btn btn-primary mr-2 ml-2">Technology</button></Link>
                     </li>
                     <li className="nav-item mt-2">
-                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Entertainment</button></a>
+                        <Link to="/Entertainment"><button type="button" className="btn btn-primary mr-2 ml-2">Entertainment</button></Link>
                     </li>
                     <li className="nav-item mt-2">
-                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Sports</button></a>
+                    <Link to="/Sports"><button type="button" className="btn btn-primary mr-2 ml-2">Sports</button></Link>
                     </li>
                     <li className="nav-item mt-2">
-                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Politics</button></a>
+                    <Link to="/Politics"><button type="button" className="btn btn-primary mr-2 ml-2">Politics</button></Link>
                     </li>
                     <li className="nav-item mt-2">
-                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Travel</button></a>
+                    <Link to="/Travel"><button type="button" className="btn btn-primary mr-2 ml-2">Travel</button></Link>
                     </li>
                     <li className="nav-item mt-2">
-                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Business</button></a>
+                        <Link to="/Business"><button type="button" className="btn btn-primary mr-2 ml-2">Business</button></Link>
                     </li>  
                     <li className="nav-item mt-2">
-                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Food</button></a>
+                        <Link to="/Food"><button type="button" className="btn btn-primary mr-2 ml-2">Food</button></Link>
                     </li>  
                     <li className="nav-item mt-2">
-                        <a className="nav-link" ><button type="button" className="btn btn-primary mr-2 ml-2">Beauty</button></a>
+                    <Link to="/Beauty"><button type="button" className="btn btn-primary mr-2 ml-2">Beauty</button></Link>
                     </li>  
                 </ul>
               </div>
