@@ -7,7 +7,7 @@ class Navbar extends React.Component{
     render(){
         return(<nav id="navbarcomp" className="navbar navbar-expand-lg navbar-light bg-light nav-fill">
             <div className="container-fluid ">
-              <Link to="/"><a className="navbar-brand"><h1 className="text-primary">Tea<span className="text-success">Time</span><img id="teaimg" src="https://www.freepnglogos.com/uploads/tea-png/tea-top-afternoon-teas-around-the-red-letter-days-blog-8.png"/></h1></a></Link>
+            <a className="navbar-brand" href="https://dukevaishnav1000.github.io/teatime2"><h1 className="text-primary">Tea<span className="text-success">Time</span><img id="teaimg" src="https://www.freepnglogos.com/uploads/tea-png/tea-top-afternoon-teas-around-the-red-letter-days-blog-8.png"/></h1></a>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
