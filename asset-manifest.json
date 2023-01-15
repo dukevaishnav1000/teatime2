@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/teatime2/static/css/main.b7b1ad74.css",
+    "main.js": "/teatime2/static/js/main.8f451c2e.js",
+    "index.html": "/teatime2/index.html",
+    "main.b7b1ad74.css.map": "/teatime2/static/css/main.b7b1ad74.css.map",
+    "main.8f451c2e.js.map": "/teatime2/static/js/main.8f451c2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7b1ad74.css",
+    "static/js/main.8f451c2e.js"
+  ]
+}
