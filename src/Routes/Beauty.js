@@ -3,8 +3,6 @@ import Navbar from '../Component/Navbar/Navbar';
 import React from 'react';
 import NewsCard from '../Component/NewsCard/NewsCard';
 
-
-
 var news_pointer=-1;
 var news_articles=[];
 
