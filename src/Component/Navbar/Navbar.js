@@ -14,7 +14,7 @@ class Navbar extends React.Component{
               <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li className="nav-item mt-2">
-                        <a className="nav-link"><Link to="/Technology"><button type="button" className="btn btn-primary mr-2 ml-2">Technology</button></Link></a>
+                        <Link to="/Technology"><button type="button nav-link" className="btn btn-primary mr-2 ml-2">Technology</button></Link>
                     </li>
                     <li className="nav-item mt-2">
                         <a className="nav-link" ><Link to="/Entertainment"><button type="button" className="btn btn-primary mr-2 ml-2">Entertainment</button></Link></a>
