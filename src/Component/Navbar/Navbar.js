@@ -20,7 +20,7 @@ class Navbar extends React.Component{
                         <a className="nav-link" ><Link to="/Entertainment"><button type="button" className="btn btn-primary mr-2 ml-2">Entertainment</button></Link></a>
                     </li>
                     <li className="nav-item mt-2">
-                        <a className="nav-link" href="https://dukevaishnav1000.github.io/teatime2/Sports"><button type="button" className="btn btn-primary mr-2 ml-2">Sports</button></a>
+                        <a className="nav-link"><Link to="/Sports"><button type="button" className="btn btn-primary mr-2 ml-2">Sports</button></Link></a>
                     </li>
                     <li className="nav-item mt-2">
                         <a className="nav-link" href="https://dukevaishnav1000.github.io/teatime2/Politics"><button type="button" className="btn btn-primary mr-2 ml-2">Politics</button></a>
