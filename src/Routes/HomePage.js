@@ -84,7 +84,7 @@ class HomePage extends React.Component{
                 }
                 </div>  
                 <div className="endContainer">
-                <p className="endOfResults"><a href="#navbarcomp">Go to top ↑</a></p>
+                <p className="endOfResults" onClick={()=>{window.scrollTo(0,0)}}><a>Go to top ↑</a></p>
                 </div>     
             </div>
         </div>
