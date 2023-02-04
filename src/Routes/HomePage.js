@@ -20,7 +20,7 @@ class HomePage extends React.Component{
             if(entry.isIntersecting)
             {       
                     console.log("body is "+document.getElementsByTagName("body"))
-                    this.makeCards(this)();
+                    this.makeCards.bind(this)();
             }
             
         }) 
