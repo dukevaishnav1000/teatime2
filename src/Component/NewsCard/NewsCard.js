@@ -4,7 +4,7 @@ import './styles.css';
 let randomImage=()=>{
   let arr=["rabbitImage_alt.webp","puppiesImage_alt.jpg","deerImage_alt.png","cuteRabbitImage_alt.jpg"]
   
-  return `url(${arr[Math.floor(Math.random(0,1)*4)]})`;
+  return arr[Math.floor(Math.random()*4)];
   
 }
 
@@ -19,6 +19,7 @@ class NewsCard extends React.Component{
 constructor(props){
 super(props);
 this.state={image_url:this.props.urlToImage};
+this.myRef=React.createRef();
 //console.log("News Card constructor called"+" image :"+this.state.image_url);
 }
 
@@ -46,6 +47,18 @@ handleHeadline=function(headline){
   
 }
 
+componentDidMount(){
+  console.log("bg image is "+this.myRef.current.style.backgroundImage);
+  const imgtag=this.myRef.current.style.backgroundImage;
+  if(imgtag==`url("null")` || imgtag=="")
+  {console.log("component did mouuuuuuunttttt called and has something else"+this.myRef.current.style.backgroundImage);
+  this.myRef.current.src=process.env.PUBLIC_URL+"/"+randomImage();
+  console.log(this.myRef.current.src);
+  }
+  console.log("src image is "+this.myRef.current.src);
+  // if(==null)
+   // 
+}
 
     render() {
         // return (
@@ -62,17 +75,24 @@ handleHeadline=function(headline){
       // {
       //   rikku="lastCard"
       // }
+
+      const myStyle={
+        backgroundSize:"cover",
+        backgroundRepeat:"no-repeat",
+        backgroundImage:"url("+this.state.image_url+")"
+      }
         return (<div className="col col-md-4 col-sm-6 col-12 m-0 mt-1 p-2 ">
         <div className="card">
-        <img src={this.state.image_url} className="card-img-top" alt="" style={{backgroundSize:"cover",backgroundRepeat:"no-repeat",backgroundImage:randomImage()}}/>
+        <img ref={this.myRef} style={myStyle} className="card-img-top"/>
         <div className="card-body">
-          <h4 className="card-title newsHeading" ><a href={this.props.urlToArticle} target="_blank" data-toggle="tooltip" data-placement="top" title={this.props.title}>{this.handleHeadline(this.props.title)}</a></h4>        
+          <h4 className="card-title newsHeading"><a href={this.props.urlToArticle} target="_blank" data-toggle="tooltip" data-placement="top" title={this.props.title}>{this.handleHeadline(this.props.title)}</a></h4>        
           <p className="card-text newsTime">{this.handleDate(this.props.publishedAt)}</p>
         </div>
       </div>
       </div>);
 }
 }
+
 
 // 
 export default NewsCard;
